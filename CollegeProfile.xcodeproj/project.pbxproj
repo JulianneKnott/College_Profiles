@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA97D3A51B4B2F6B00528414 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA97D3A41B4B2F6B00528414 /* DetailsViewController.swift */; };
 		DAB0F21D1B4AD95F003A9D73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB0F21C1B4AD95F003A9D73 /* AppDelegate.swift */; };
 		DAB0F21F1B4AD95F003A9D73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB0F21E1B4AD95F003A9D73 /* ViewController.swift */; };
 		DAB0F2221B4AD95F003A9D73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB0F2201B4AD95F003A9D73 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		DAB0F2271B4AD95F003A9D73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB0F2251B4AD95F003A9D73 /* LaunchScreen.storyboard */; };
 		DAB0F2321B4AD95F003A9D73 /* CollegeProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB0F2311B4AD95F003A9D73 /* CollegeProfileTests.swift */; };
 		DAB0F23D1B4AD95F003A9D73 /* CollegeProfileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB0F23C1B4AD95F003A9D73 /* CollegeProfileUITests.swift */; };
+		DAB0F24B1B4AD986003A9D73 /* College.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB0F24A1B4AD986003A9D73 /* College.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA97D3A41B4B2F6B00528414 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		DAB0F2191B4AD95F003A9D73 /* CollegeProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollegeProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB0F21C1B4AD95F003A9D73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAB0F21E1B4AD95F003A9D73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		DAB0F2381B4AD95F003A9D73 /* CollegeProfileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollegeProfileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB0F23C1B4AD95F003A9D73 /* CollegeProfileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeProfileUITests.swift; sourceTree = "<group>"; };
 		DAB0F23E1B4AD95F003A9D73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB0F24A1B4AD986003A9D73 /* College.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = College.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,12 @@
 			children = (
 				DAB0F21C1B4AD95F003A9D73 /* AppDelegate.swift */,
 				DAB0F21E1B4AD95F003A9D73 /* ViewController.swift */,
+				DA97D3A41B4B2F6B00528414 /* DetailsViewController.swift */,
 				DAB0F2201B4AD95F003A9D73 /* Main.storyboard */,
 				DAB0F2231B4AD95F003A9D73 /* Assets.xcassets */,
 				DAB0F2251B4AD95F003A9D73 /* LaunchScreen.storyboard */,
 				DAB0F2281B4AD95F003A9D73 /* Info.plist */,
+				DAB0F24A1B4AD986003A9D73 /* College.swift */,
 			);
 			path = CollegeProfile;
 			sourceTree = "<group>";
@@ -257,6 +263,8 @@
 			files = (
 				DAB0F21F1B4AD95F003A9D73 /* ViewController.swift in Sources */,
 				DAB0F21D1B4AD95F003A9D73 /* AppDelegate.swift in Sources */,
+				DAB0F24B1B4AD986003A9D73 /* College.swift in Sources */,
+				DA97D3A51B4B2F6B00528414 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +491,7 @@
 				DAB0F2431B4AD95F003A9D73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAB0F2441B4AD95F003A9D73 /* Build configuration list for PBXNativeTarget "CollegeProfileTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +500,7 @@
 				DAB0F2461B4AD95F003A9D73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAB0F2471B4AD95F003A9D73 /* Build configuration list for PBXNativeTarget "CollegeProfileUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +509,7 @@
 				DAB0F2491B4AD95F003A9D73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

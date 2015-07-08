@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class DetailsViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
@@ -17,7 +18,6 @@ class DetailsViewController: UIViewController, UINavigationControllerDelegate, U
     @IBOutlet weak var webAddressTextField: UITextField!
     var imagePicker: UIImagePickerController!
     var webURL: NSURL!
-    
     var college : College!
     
     override func viewDidLoad() {
@@ -31,7 +31,7 @@ class DetailsViewController: UIViewController, UINavigationControllerDelegate, U
         webAddressTextField.text = college.webAddress
         webURL = NSURL(string: webAddressTextField.text!)
     }
-
+    
     @IBAction func onTappedSaveButton(sender: AnyObject) {
         college.name = nameTextField.text!
         if let num = Int(enrollmentTextField.text!) {
@@ -67,5 +67,11 @@ class DetailsViewController: UIViewController, UINavigationControllerDelegate, U
                 self.imageView.image = image
             }
         }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let dvc = segue.destinationViewController as! MapViewController
+        dvc.location = college.location
+        dvc.name = college.name
     }
 }
